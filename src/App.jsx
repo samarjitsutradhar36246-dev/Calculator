@@ -1,11 +1,11 @@
 import "./App.css";
+import Buttons from "./Buttons";
+import Display from "./Display";
 function App() {
   return (
     <div id="calculator">
-      <input type="text" />
-      <div id="container">
-        <button>C</button>
-      </div>
+      <Display />
+      <Buttons />
     </div>
   );
 }
