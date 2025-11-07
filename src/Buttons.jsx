@@ -1,4 +1,4 @@
-const Buttons = () => {
+const Buttons = ({ onbuttonclick }) => {
   const buttons = [
     "C",
     "1",
@@ -17,11 +17,14 @@ const Buttons = () => {
     "9",
     "0",
     ".",
+    "c",
   ];
   return (
     <div id="btn-container">
       {buttons.map((name) => (
-        <button>{name}</button>
+        <button key={name} onClick={() => onbuttonclick(name)}>
+          {name}
+        </button>
       ))}
     </div>
   );
